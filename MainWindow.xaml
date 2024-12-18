@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DamageV2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Menu HorizontalAlignment="Center" Height="17" VerticalAlignment="Top" Width="800"/>
-
+        Title="MainWindow" Height="400" Width="640" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,0,0">
+        <Menu Height="16" VerticalAlignment="Top" Margin="0,0,0,0">
+            <MenuItem x:Name="About" Header="About" Click="About_Click"/>
+        </Menu>
+        <Button x:Name="ChangeVersion" Content="Current Version: 1.8" HorizontalAlignment="Right" Height="20" Margin="0,16,320,0" VerticalAlignment="Top" Width="320" Click="ChangeVersion_Click"/>
+        <Button x:Name="ChangeMode" Content="Current Mode: Average Damage" HorizontalAlignment="Right" Height="20" Margin="0,16,0,0" VerticalAlignment="Top" Width="320" Click="ChangeMode_Click"/>
     </Grid>
 </Window>
